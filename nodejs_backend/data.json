@@ -1,0 +1,196 @@
+{
+  "personalities": {
+    "january_male": {
+      "type": "The Visionary Leader",
+      "turn_off": "Dishonesty and lack of ambition",
+      "topics": ["Career goals", "Future plans", "Leadership experiences"],
+      "outfit": "Sharp, professional attire with bold colors",
+      "body_parts": "Strong jawline, confident posture",
+      "case_study": "John, a January male, walked into the room commanding attention without saying a word...",
+      "dating_ideas": "Exclusive rooftop dinner, private art gallery tour",
+      "presents": "Luxury watch, personalized leather goods",
+      "keep_spark": "Challenge him intellectually, show your own ambitions",
+      "after_breakup": "Give space, then reconnect with something impressive"
+    },
+    "january_female": {
+      "type": "The Ambitious Queen",
+      "turn_off": "Neediness and indecisiveness",
+      "topics": ["Personal achievements", "Travel dreams", "Self-improvement"],
+      "outfit": "Elegant power dressing, statement accessories",
+      "body_parts": "Confident eyes, graceful hands",
+      "case_study": "Sarah never waited for opportunities—she created them. That's what makes January women magnetic...",
+      "dating_ideas": "Michelin-star restaurant, VIP event access",
+      "presents": "Designer bag, exclusive experience vouchers",
+      "keep_spark": "Maintain your independence, surprise her with grand gestures",
+      "after_breakup": "Show growth, make her wonder what she's missing"
+    },
+    "february_male": {
+      "type": "The Intuitive Thinker",
+      "turn_off": "Superficiality and small talk",
+      "topics": ["Philosophy", "Psychology", "Deep life questions"],
+      "outfit": "Thoughtful casual with unique pieces",
+      "body_parts": "Penetrating gaze, expressive hands",
+      "case_study": "Mark could read people like books. One conversation and he knew exactly what you were thinking...",
+      "dating_ideas": "Bookstore café, planetarium visit",
+      "presents": "Rare book, meaningful artwork",
+      "keep_spark": "Engage in deep conversations, respect his need for solitude",
+      "after_breakup": "Intellectual reconnection, share something profound you learned"
+    },
+    "february_female": {
+      "type": "The Mysterious Muse",
+      "turn_off": "Predictability and loud environments",
+      "topics": ["Art", "Dreams", "Hidden talents"],
+      "outfit": "Bohemian elegance, layered textures",
+      "body_parts": "Enchanting smile, delicate neck",
+      "case_study": "Emma had this way of making you feel like you were the only person in the world...",
+      "dating_ideas": "Private poetry reading, sunset boat ride",
+      "presents": "Handwritten letter, custom jewelry",
+      "keep_spark": "Create magical moments, write her poetry",
+      "after_breakup": "Send something deeply personal, remind her of your connection"
+    },
+    "march_male": {
+      "type": "The Adventurous Spirit",
+      "turn_off": "Routine and boredom",
+      "topics": ["Travel adventures", "Extreme sports", "New experiences"],
+      "outfit": "Athletic wear, outdoor gear",
+      "body_parts": "Athletic build, energetic smile",
+      "case_study": "Jake said yes to everything. Skydiving? Sure. Road trip at midnight? Let's go...",
+      "dating_ideas": "Surprise weekend getaway, adventure park",
+      "presents": "Experience tickets, adventure gear",
+      "keep_spark": "Plan spontaneous activities, never let things get stale",
+      "after_breakup": "Invite on an exciting adventure, show you're still fun"
+    },
+    "march_female": {
+      "type": "The Free Soul",
+      "turn_off": "Control and possessiveness",
+      "topics": ["Freedom", "Creativity", "Life philosophy"],
+      "outfit": "Flowing fabrics, natural makeup",
+      "body_parts": "Wild hair, captivating laugh",
+      "case_study": "Lily couldn't be caged. The more you tried, the faster she'd run...",
+      "dating_ideas": "Music festival, beach camping",
+      "presents": "Festival passes, handmade crafts",
+      "keep_spark": "Give her space, join her adventures",
+      "after_breakup": "Show you've embraced freedom too, no pressure"
+    },
+    "april_male": {
+      "type": "The Dynamic Achiever",
+      "turn_off": "Laziness and negativity",
+      "topics": ["Business ventures", "Fitness goals", "Success stories"],
+      "outfit": "Premium casual, designer labels",
+      "body_parts": "Chiseled features, powerful handshake",
+      "case_study": "David built three companies before 30. Success wasn't luck—it was relentless drive...",
+      "dating_ideas": "Private chef experience, luxury car test drive",
+      "presents": "Tech gadgets, premium subscriptions",
+      "keep_spark": "Celebrate wins together, maintain your own success",
+      "after_breakup": "Showcase your achievements, make her curious"
+    },
+    "april_female": {
+      "type": "The Radiant Star",
+      "turn_off": "Insecurity and drama",
+      "topics": ["Fashion", "Social events", "Personal brand"],
+      "outfit": "Trendy, Instagram-worthy outfits",
+      "body_parts": "Glowing skin, perfect smile",
+      "case_study": "Jessica lit up every room. People naturally gravitated toward her energy...",
+      "dating_ideas": "VIP club table, fashion show",
+      "presents": "Luxury cosmetics, exclusive event access",
+      "keep_spark": "Keep up appearances, plan photo-worthy dates",
+      "after_breakup": "Level up your look, let her see your transformation"
+    },
+    "may_male": {
+      "type": "The Sensual Protector",
+      "turn_off": "Disrespect and coldness",
+      "topics": ["Family values", "Sensory experiences", "Loyalty"],
+      "outfit": "Comfortable luxury, soft fabrics",
+      "body_parts": "Strong arms, warm embrace",
+      "case_study": "Michael remembered every detail. Your favorite flower, how you take your coffee...",
+      "dating_ideas": "Couples spa day, home-cooked meal",
+      "presents": "Personalized items, comfort gifts",
+      "keep_spark": "Physical touch, create cozy moments",
+      "after_breakup": "Remind him of intimate memories, show you care"
+    },
+    "may_female": {
+      "type": "The Nurturing Goddess",
+      "turn_off": "Neglect and insensitivity",
+      "topics": ["Home", "Nature", "Emotional connection"],
+      "outfit": "Soft, feminine styles, earth tones",
+      "body_parts": "Gentle curves, soothing voice",
+      "case_study": "Anna made everyone feel at home. Her presence was like a warm embrace...",
+      "dating_ideas": "Garden picnic, cooking class together",
+      "presents": "Plants, homemade treats",
+      "keep_spark": "Appreciate her efforts, create rituals together",
+      "after_breakup": "Acknowledge what you lost, show genuine change"
+    },
+    "june_male": {
+      "type": "The Charismatic Communicator",
+      "turn_off": "Silence and emotional distance",
+      "topics": ["Stories", "Humor", "Social dynamics"],
+      "outfit": "Stylish, conversation-starting pieces",
+      "body_parts": "Expressive eyes, charming smile",
+      "case_study": "Chris could talk to anyone about anything. He made strangers feel like old friends...",
+      "dating_ideas": "Comedy show, networking event together",
+      "presents": "Books, interesting conversation pieces",
+      "keep_spark": "Keep conversations flowing, introduce new people",
+      "after_breakup": "Reach out with humor, remind him of good times"
+    },
+    "june_female": {
+      "type": "The Social Butterfly",
+      "turn_off": "Isolation and monotony",
+      "topics": ["Friends", "Events", "Trending topics"],
+      "outfit": "Colorful, eye-catching ensembles",
+      "body_parts": "Animated expressions, infectious laugh",
+      "case_study": "Sophie knew everyone. Her phone buzzed constantly with invitations...",
+      "dating_ideas": "Party hopping, group activities",
+      "presents": "Statement accessories, party dresses",
+      "keep_spark": "Expand social circle, attend events together",
+      "after_breakup": "Show you're thriving socially, FOMO is real"
+    }
+  },
+  "videos": [
+    {
+      "id": "v1",
+      "title": "If his birthday is June… watch this",
+      "thumbnail": "assets/images/thumb1.jpg",
+      "url": "assets/videos/video1.mp4",
+      "isFree": true,
+      "duration": "0:59"
+    },
+    {
+      "id": "v2",
+      "title": "Never do this to this type",
+      "thumbnail": "assets/images/thumb2.jpg",
+      "url": "assets/videos/video2.mp4",
+      "isFree": false,
+      "duration": "1:23"
+    },
+    {
+      "id": "v3",
+      "title": "The secret attraction trigger",
+      "thumbnail": "assets/images/thumb3.jpg",
+      "url": "assets/videos/video3.mp4",
+      "isFree": false,
+      "duration": "0:47"
+    },
+    {
+      "id": "v4",
+      "title": "Why he pulled away (and how to fix it)",
+      "thumbnail": "assets/images/thumb4.jpg",
+      "url": "assets/videos/video4.mp4",
+      "isFree": false,
+      "duration": "1:15"
+    },
+    {
+      "id": "v5",
+      "title": "Text message that makes him obsessed",
+      "thumbnail": "assets/images/thumb5.jpg",
+      "url": "assets/videos/video5.mp4",
+      "isFree": false,
+      "duration": "0:52"
+    }
+  ],
+  "ai_prompts": {
+    "first_message": "Generate 3 compelling first messages for a {personality_type} based on their interests in {topics}. Keep them short, intriguing, and copy-ready.",
+    "next_reply": "Suggest 3 natural follow-up responses after '{last_message}' for a {personality_type}. Consider their turn-offs: {turn_off}.",
+    "distance_reason": "Analyze why a {personality_type} might become distant. Provide 3 specific reasons and 3 actionable solutions.",
+    "attraction_tips": "Give 5 proven attraction strategies specifically for a {personality_type}. Include psychological triggers and practical examples."
+  }
+}
