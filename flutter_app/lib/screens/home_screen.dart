@@ -328,7 +328,7 @@ class _HomeScreenState extends State<HomeScreen> {
         children: [
           Row(
             children: [
-              Icon(Icons.instagram, color: Colors.pink[300], size: 28),
+              Icon(Icons.camera_alt, color: Colors.pink[300], size: 28),
               const SizedBox(width: 12),
               Expanded(
                 child: Column(
