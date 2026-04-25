@@ -1,26 +1,29 @@
 ```
 # Dependencies
 node_modules/
+pubspec.lock
+
+# Build artifacts
+build/
+.dart_tool/
+.flutter-plugins
+.flutter-plugin-dependencies
+.ios/
+android/.gradle/
+android/gradle/
+android/build/
+ios/Pods/
+ios/.symlinks/
+**/generated_plugin_registrant.*
 
 # Environment variables
 .env
 .env.local
-.env.*
-
-# Build outputs
-build/
-dist/
-
-# IDE files
-.vscode/
-.idea/
+*.env
 
 # Logs
 *.log
-
-# Temporary files
-*.tmp
-*.swp
+**/logs
 
 # OS generated files
 .DS_Store

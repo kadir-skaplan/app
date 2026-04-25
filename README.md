@@ -1,200 +1,133 @@
-# Personality Insights App
+# Personality Insights - Mobile App
 
-A production-ready mobile application that provides personality-based relationship insights using AI.
+A personality-based mobile application built with Flutter (mobile only) and Node.js backend.
 
-## 📱 Tech Stack
+## 📱 Features
 
-### Frontend (Mobile)
-- **Flutter** (Dart)
-- **Provider** for state management
-- Runs on iOS and Android
+- **Home Screen**: Date picker, gender selection, premium UI
+- **Loading Screen**: Fake analysis animation (2.5s)
+- **Result Screen**: Expandable accordion cards with free/premium content
+- **Chat Screen**: AI assistant with quick action buttons
+- **Video System**: Horizontal carousel with lock/unlock
+- **Premium System**: Blur overlays, lock icons, CTAs
 
-### Backend
-- **Node.js** with Express.js
-- RESTful API
-- OpenAI integration for AI chat
+## 🛠️ Tech Stack
 
-## 🚀 Features
-
-### Core Functionality
-1. **Personality Analysis** - Enter birth date + gender to get detailed personality profile
-2. **AI Chat Assistant** - Get personalized messaging advice
-3. **Video Content** - Short-form educational videos (first free, rest premium)
-4. **Premium System** - Unlock advanced insights and features
-
-### Screens
-- **Home Screen** - Date picker, gender selection, analyze button
-- **Loading Screen** - Fake analysis animation (2-3 seconds)
-- **Result Screen** - Expandable accordion cards with free/premium content
-- **Chat Screen** - AI-powered conversation assistant with quick actions
-
-### UX Features
+**Frontend (Mobile Only)**:
+- Flutter 3.x (Dart)
+- Provider state management
 - Dark mode premium design
-- Smooth animations
-- Storytelling-style content
-- Emotional hooks throughout
-- Copy-to-clipboard for AI messages
-- Social media loop integration
+
+**Backend**:
+- Node.js + Express
+- OpenAI API integration (with mock fallback)
+- JSON data storage
 
 ## 📁 Project Structure
 
 ```
-flutter_app/
-├── lib/
-│   ├── main.dart                 # App entry point
-│   ├── models/
-│   │   └── models.dart           # Data models
-│   ├── providers/
-│   │   └── app_provider.dart     # State management
-│   ├── screens/
-│   │   ├── home_screen.dart      # Input screen
-│   │   ├── result_screen.dart    # Analysis results
-│   │   └── chat_screen.dart      # AI chat interface
-│   ├── services/
-│   │   └── api_service.dart      # API calls
-│   └── widgets/
-│       ├── accordion_card.dart   # Expandable cards
-│       ├── video_carousel.dart   # Horizontal video list
-│       └── premium_overlay.dart  # Premium lock system
-└── assets/
-    ├── images/
-    └── videos/
-
-nodejs_backend/
-├── server.js                     # Express server
-├── data.json                     # Personality data
-├── package.json
-└── .env                          # Environment variables
+/workspace/
+├── flutter_app/
+│   ├── lib/
+│   │   ├── main.dart
+│   │   ├── models/models.dart
+│   │   ├── providers/app_provider.dart
+│   │   ├── screens/
+│   │   │   ├── home_screen.dart
+│   │   │   ├── result_screen.dart
+│   │   │   └── chat_screen.dart
+│   │   ├── services/api_service.dart
+│   │   └── widgets/
+│   │       ├── accordion_card.dart
+│   │       ├── video_carousel.dart
+│   │       └── premium_overlay.dart
+│   └── assets/
+│       ├── fonts/ (Poppins fonts)
+│       ├── images/
+│       └── videos/
+├── nodejs_backend/
+│   ├── server.js
+│   ├── data.json (24 personalities)
+│   ├── package.json
+│   └── .env
+└── README.md
 ```
 
-## 🔧 Setup Instructions
+## 🚀 How to Run
 
-### Backend Setup
+### Backend
 
 ```bash
-cd nodejs_backend
-
-# Install dependencies
+cd /workspace/nodejs_backend
 npm install
-
-# Create .env file
-cp .env.example .env
-
-# Add your OpenAI API key to .env
-# OPENAI_API_KEY=your_key_here
-
-# Start server
 npm start
 ```
 
-Server runs on `http://localhost:3000`
+Server runs on: http://localhost:3000
 
-### Flutter App Setup
+### Flutter App
+
+**Important**: Flutter SDK must be installed on your local machine.
 
 ```bash
-cd flutter_app
-
-# Install dependencies
+cd /workspace/flutter_app
 flutter pub get
-
-# Run on device/emulator
 flutter run
 ```
 
-## 🎯 API Endpoints
+**Supported Platforms**:
+- iOS (requires macOS with Xcode)
+- Android (requires Android Studio)
+- Windows Desktop
+- Web (Chrome/Edge)
 
-### POST /analyze
-Analyze personality based on birth date and gender
+## 🔧 Fixes Applied
 
-```json
-{
-  "day": 15,
-  "month": 6,
-  "gender": "male"
-}
-```
+1. ✅ Created missing asset directories (images, videos, fonts)
+2. ✅ Downloaded Poppins fonts (Regular, Medium, Bold)
+3. ✅ Fixed `Icons.instagram` → `Icons.camera_alt` (Instagram icon not available in all Flutter versions)
+4. ✅ Fixed `Icons.unlock` → `Icons.lock_open` (unlock icon not available in all Flutter versions)
+5. ✅ Added `import 'dart:ui' show ImageFilter;` for blur effect
+6. ✅ Added placeholder files to asset directories
 
-### POST /chat
-Get AI-powered chat response
+## 📊 API Endpoints
 
-```json
-{
-  "message": "Help me write a first message",
-  "personalityType": "The Charismatic Communicator",
-  "topics": ["Stories", "Humor"],
-  "turnOff": "Silence and emotional distance"
-}
-```
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| `/health` | GET | Health check |
+| `/analyze` | POST | Analyze personality from DOB + gender |
+| `/chat` | POST | AI chat with 3 options |
+| `/optimize` | POST | Optimize message |
+| `/videos` | GET | Get video list |
 
-### POST /optimize
-Optimize a message for better impact
+## 🎨 Design Features
 
-```json
-{
-  "originalMessage": "Hey, how are you?",
-  "personalityType": "The Visionary Leader",
-  "goal": "maximum impact"
-}
-```
+- **Color Scheme**: Purple (#6C5CE7), Dark (#0A0A0F), Amber premium
+- **Font**: Poppins (Regular, Medium, Bold)
+- **Animations**: FadeInUp, FadeInDown
+- **Storytelling**: Short paragraphs, emotional hooks
+- **Premium UX**: Blur effects, lock icons, gradient buttons
 
-### GET /videos
-Get all video content
+## 💡 Usage Flow
 
-## 💎 Premium Features
+1. User enters date of birth + gender
+2. Sees loading animation (2.5s)
+3. Views personality analysis (free sections)
+4. Watches first video (FREE), others locked
+5. Uses AI chat for advice
+6. Premium upsell for locked content
 
-Locked content includes:
-- Dating ideas
-- Present suggestions
-- Keep the spark alive tips
-- After breakup strategies
-- Most video content
-- Unlimited AI chat usage
+## 🔐 Premium System
 
-## 🎨 Design System
+- Blur overlay on locked content
+- Lock icons on videos (first FREE, rest LOCKED)
+- Premium dialog with feature list
+- CTA: "Don't Make This Mistake..."
 
-- **Primary Color**: `#6C5CE7` (Purple)
-- **Background**: `#0A0A0F` (Dark)
-- **Premium Accent**: Amber/Orange gradient
-- **Font**: Poppins
+## 📝 Notes
 
-## 📊 Personality Types
-
-The app includes 12 personality types × 2 genders = 24 unique profiles:
-
-1. January - The Visionary Leader / Ambitious Queen
-2. February - The Intuitive Thinker / Mysterious Muse
-3. March - The Adventurous Spirit / Free Soul
-4. April - The Dynamic Achiever / Radiant Star
-5. May - The Sensual Protector / Nurturing Goddess
-6. June - The Charismatic Communicator / Social Butterfly
-7-12. Additional months follow similar patterns
-
-## 🔐 Security Notes
-
-- API keys stored in backend `.env` only
-- Never expose API keys to mobile app
-- Use HTTPS in production
-- Implement proper authentication for premium features
-
-## 🚀 Production Deployment
-
-### Backend
-- Deploy to Heroku, AWS, or DigitalOcean
-- Set environment variables securely
-- Enable CORS for your domain
-- Use rate limiting
-
-### Mobile
-- Update API base URL in `api_service.dart`
-- Configure app icons and splash screens
-- Set up Firebase for analytics (optional)
-- Implement in-app purchases for premium
-- Submit to App Store and Google Play
-
-## 📝 License
-
-This is a commercial application. All rights reserved.
-
----
-
-Built with ❤️ for meaningful connections
+- Backend has mock data fallback if OpenAI API unavailable
+- Set `OPENAI_API_KEY` in `.env` for real AI responses
+- Flutter app requires local Flutter SDK installation
+- For iOS: Run on Mac with Xcode
+- For Android: Run with Android Studio emulator or device

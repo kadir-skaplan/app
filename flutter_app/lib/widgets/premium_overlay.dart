@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:ui' show ImageFilter;
 
 class PremiumOverlay extends StatelessWidget {
   final Widget child;
@@ -81,7 +82,7 @@ class PremiumOverlay extends StatelessWidget {
                     child: const Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        Icon(Icons.unlock, color: Colors.black, size: 18),
+                        Icon(Icons.lock_open, color: Colors.black, size: 18),
                         SizedBox(width: 8),
                         Text(
                           'Unlock Now',
